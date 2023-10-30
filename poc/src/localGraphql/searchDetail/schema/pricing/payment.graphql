@@ -1,0 +1,51 @@
+type Payment {
+    paylater: Paylater
+    cancellation: Cancellation
+    noCreditCard: NoCreditCard
+    payAtHotel: PayAtHotel
+    payAtCheckIn: PayAtCheckIn
+    taxReceipt: TaxReceipt
+}
+
+type Paylater {
+    isEligible: Boolean
+    authDate: Date
+    chargeDate: Date
+}
+
+type Cancellation {
+    code: String
+    type: CancellationType
+    freeCancellationDate: Date
+    policies: String
+    noShowPolicy: String
+}
+
+enum CancellationType {
+    FREE_CANCELLATION
+    SPECIAL_CONDITIONS
+    NON_REFUNDABLE
+}
+
+type NoCreditCard {
+    isEligible: Boolean
+}
+
+type PayAtHotel {
+    isEligible: Boolean
+}
+
+type PayAtCheckIn {
+    isEligible: Boolean
+}
+
+type TaxReceipt {
+    isEligible: Boolean
+    type: TaxReceiptType
+    isDomestic: Boolean
+}
+
+enum TaxReceiptType {
+    TYPE1
+    TYPE2
+}

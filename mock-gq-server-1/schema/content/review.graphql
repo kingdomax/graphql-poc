@@ -1,0 +1,62 @@
+type Review {
+    provider: ReviewProvider
+    cumulative: ReviewCumulative
+    demographic: ReviewDemographic
+    summary: ReviewSummary
+}
+
+type ReviewProvider {
+    id: Int
+    isDefault: Boolean
+}
+
+type ReviewCumulative {
+    score: Float
+    reviewCount: Int
+}
+
+type ReviewDemographic {
+    reviewCount: Int
+    id: DemographicId
+    grades: [DemographicGrade]
+}
+
+enum DemographicId {
+    ALL_GUESTS
+    COUPLE
+    BUSINESS_TRAVELER
+    SOLO_TRAVELER
+    GROUP
+    FAMILY_WITH_OLD_CHILDREN
+    FAMILY_WITH_YOUNG_CHILDREN
+}
+
+type DemographicGrade {
+    type: GradeBy
+    score: Float
+}
+
+enum GradeBy {
+    OVERALL
+    CLEANLINESS
+    FACILITIES
+    LOCATION
+    ROOM_COMFORT
+    STAFF_PERFORMANCE
+    VALUE_FOR_MONEY
+}
+
+type ReviewSummary {
+    recommendedScore: Int
+    frequentTravellerScore: Int
+    snippets: [ReviewSnippet]
+}
+
+type ReviewSnippet {
+    snippet: String
+    date: Date
+    reviewerName: String
+    reviewRating: Float
+    countryId: Int
+    countryName: String
+}

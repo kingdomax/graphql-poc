@@ -1,0 +1,69 @@
+type Filter {
+    group: FilterGroup
+    items: [FilterItem]
+}
+
+type FilterItem {
+    id: Int
+    value: Int
+    name: String
+    type: FilterType
+    extraData: FilterExtraData
+}
+
+"FilterExtraData need to be rework (current schema base on PAPI response)"
+type FilterExtraData {
+    price: Float
+    synopsis: String
+    recommendedScore: Int
+}
+
+enum FilterGroup {
+    POPULAR
+    FAMILY
+    PERSONALIZED
+    STAR_RATING
+    GUEST_RATING
+    GUEST_REVIEW_BREAKDOWN
+    NEIGHBORHOOD
+    ROOM_AMENITIES
+    PROPERTY_FACILITIES
+    ROOM_OFFERS
+    PRODUCT_TYPE
+    PROPERTY_TYPE
+    PAYMENT_OPTIONS
+    DEAL_DISCOUNT
+    ACCOMMODATION_CLASS
+    HOTEL_CHAIN
+    LOCATION_RATING
+    LOCATION_HIGHLIGHT
+    NEARBY_ATTRACTION
+    NEARBY_TRANSPORTATION
+    BEACH_ACESS
+}
+
+"same as ColumnType in PAPI"
+enum FilterType {
+    DEALS
+    STAR_RATING
+    GUEST_RATING
+    LOCATION_RATING
+    PROPERTY_AREA_ID
+    PROPERTY_CHAIN_ID
+    LANDMARK_ID
+    LANDMARK_SUBTYPE_ID
+    BEACH_ACCESS_TYPE
+    ATMOSPHERE_ID
+    ROOM_BENEFIT
+    ROOM_AMENITIES
+    PROPERTY_FACILITIES
+    PRODUCT_TYPE
+    PAYMENT_OPTION
+    AFFORDABLE_CATEGORY
+    GUEST_STAFF_RATING
+    GUEST_VALUE_RATING  
+    GUEST_COMFORT_RATING
+    GUEST_LOCATION_RATING
+    GUEST_FACILITIES_RATING
+    GUEST_CLEANLINESS_RATING
+}

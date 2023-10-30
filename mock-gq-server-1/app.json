@@ -1,0 +1,14 @@
+{
+    "apps": [{
+        "name": "mock-gq-server-1",
+        "script": "./index.js",
+        "node_args": ["-r", "esm"],
+        "exec_mode": "cluster",
+        "instances": -1,
+        "watch": false,
+        "env": {
+            "PORT": "10000",
+            "NODE_ENV": "production"
+        }
+    }]
+}

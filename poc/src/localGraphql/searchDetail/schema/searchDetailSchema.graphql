@@ -1,0 +1,21 @@
+# import Property from './property.graphql'
+# import Date from './type/customType.graphql'
+# import Filter from './coreSearch/filter.graphql'
+# import MapInformation from './npc/mapInformation.graphql'
+# import SearchInformation from './coreSearch/searchInformation.graphql'
+# import ObjectInformation from './coreSearch/objectInformation.graphql'
+# import SupplierInformation from './pricing/supplierInformation.graphql'
+
+type Query {
+  filters: [Filter]
+  mapInfo: MapInformation
+  searchInfo: SearchInformation
+  objectInfo: ObjectInformation
+  supplierInfo: [SupplierInformation]
+
+  properties: [Property]
+  recommendedProperty: [Property]
+  highlyRatedAgodaHome: [Property]
+  featureAgodaHomesResult: [Property]
+  extraAgodaHomes: [Property]
+}

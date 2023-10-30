@@ -1,0 +1,5 @@
+# import Sponsor from './sponsor.graphql'
+
+type PropertyCoreSearch {
+    sponsor: Sponsor
+}

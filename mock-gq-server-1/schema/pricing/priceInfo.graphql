@@ -1,0 +1,17 @@
+type PriceInfo {
+    perBook: PriceView
+    perNight: PriceView
+    perRoomPerNight: PriceView
+}
+
+type PriceView {
+    inclusive: Price
+    exclusive: Price
+}
+
+type Price {
+    display: Float
+    chargeTotal: Float
+    originalPrice: Float
+    crossedOutPrice: Float
+}

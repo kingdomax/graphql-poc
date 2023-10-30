@@ -1,0 +1,12 @@
+type TopSellingPoint {
+    type: TopSellingType
+    value: Float
+}
+
+enum TopSellingType {
+    DEAL_OF_DAY
+    BEST_SELLER
+    TOP_VALUE_FOR_MONEY
+    CHEAPEST_THAN_SIMILAR
+    TOP_LOCATION_FOR_MONEY
+}

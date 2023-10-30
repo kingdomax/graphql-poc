@@ -1,0 +1,20 @@
+# import PropertyMeta from './metaApi/propertyMeta.graphql'
+# import PropertyContent from './content/propertyContent.graphql'
+# import PropertyPricing from './pricing/propertyPricing.graphql'
+# import AlternateDate from './searchClay/alternateDate.graphql'
+# import TopSellingPoint from './searchClay/topSellingPoint.graphql'
+# import PropertyCoreSearch from './coreSearch/propertyCoreSearch.graphql'
+# import UniqueSellingPoint from './searchClay/uniqueSellingPoint.graphql'
+
+type Property {
+    propertyId: Int!
+    meta: PropertyMeta
+    content: PropertyContent
+    pricing: PropertyPricing
+    coreSearch: PropertyCoreSearch
+
+    isRecommended: Boolean
+    alternateDate: [AlternateDate]
+    topSellingPoints: [TopSellingPoint]
+    uniqueSellingPoints: [UniqueSellingPoint]
+}

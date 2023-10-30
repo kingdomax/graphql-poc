@@ -1,0 +1,23 @@
+type SearchInformation {
+    isComplete: Boolean
+    totalProperties: Int
+    availableProperties: Int
+    filteredProperties: Int
+    percentageBooked: Int
+    suggestPrice: SuggestPrice
+    "Need to discuss how to handle deep link with preeda"
+    token: String
+    "Need to discuss should we move yesterday search logic to client"
+    searchStatus: SearchStatus
+    checkIn: Date
+}
+
+enum SuggestPrice {
+    INCLUSIVE
+    EXCLUSIVE
+}
+
+enum SearchStatus {
+    NORMAL
+    CHECKIN_CHANGED
+}

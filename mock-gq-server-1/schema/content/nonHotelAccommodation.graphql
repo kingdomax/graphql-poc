@@ -1,0 +1,18 @@
+type NonHotelAccommodation {
+    hostLevel: HostLevel
+    room: NonHotelAccommodationRoom
+}
+
+type NonHotelAccommodationRoom {
+    noOfBed: Int
+    roomSize: Int
+    noOfBedrooms: Int
+    noOfBathrooms: Int
+}
+
+enum HostLevel {
+    REGULAR
+    VERIFIED
+    TRUSTED_HOST
+    TOP_HOST
+}

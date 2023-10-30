@@ -1,0 +1,26 @@
+type Discount {
+    deals: [DealType]
+    psuedoCoupon: PsuedoCoupon
+    channelDiscount: ChanelDiscount
+}
+
+enum DealType {
+    SEASONAL_DEAL
+    EARLY_BIRD
+    CHINA_SEASONAL
+    LAST_MINUTE_DEAL
+    WEEKEND_DEAL
+    LONG_DEAL
+}
+
+enum ChanelDiscount {
+    MOBILE_DEAL
+    INSIDE_DEAL
+    SECRET_DEAL
+    RETAIL_DEAL
+}
+
+type PsuedoCoupon {
+    value: Float
+    code: String
+}

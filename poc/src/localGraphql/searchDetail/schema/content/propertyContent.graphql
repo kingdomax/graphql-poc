@@ -1,0 +1,19 @@
+# import Rating from './rating.graphql'
+# import Distance from './distance.graphql'
+# import InformationSummary from './informationSummary.graphql'
+# import Highlight from './highlight.graphql'
+# import Images from './images.graphql'
+# import Review from './review.graphql'
+# import Engagement from './engagement.graphql'
+# import NonHotelAccommodation from './nonHotelAccommodation.graphql'
+
+type PropertyContent {
+    rating: Rating
+    images: Images
+    reviews: [Review]
+    distance: [Distance]
+    highlights: Highlight
+    engagement: Engagement
+    summary: InformationSummary
+    nonHotelAccommodation: NonHotelAccommodation
+}

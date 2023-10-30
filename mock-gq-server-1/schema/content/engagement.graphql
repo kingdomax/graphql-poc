@@ -1,0 +1,6 @@
+"Engagement/BookingHistory couble be moved to meta api"
+type Engagement {
+    todayBooking: Int
+    peopleLooking: Int
+    lastBookedHour: Int
+}

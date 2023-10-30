@@ -1,0 +1,6 @@
+# import PriceInfo from './priceInfo.graphql'
+
+type MseRoomSummary {
+    providerId: Int
+    price: PriceInfo
+}

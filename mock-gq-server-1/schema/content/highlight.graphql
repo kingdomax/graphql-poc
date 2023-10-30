@@ -1,0 +1,15 @@
+type Highlight {
+    favouriteFeature: FavouriteFeature
+}
+
+type FavouriteFeature {
+    id: Int
+    category: FavouriteFeatureCategory
+}
+
+enum FavouriteFeatureCategory {
+    AIRPORT
+    TRANSPORT
+    FACILITY
+    TOP_LANDMARK
+}

@@ -1,0 +1,26 @@
+{
+  "name": "mock-gq-server-1",
+  "version": "1.0.0",
+  "description": "Mock server 1",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -r esm index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.6.8",
+    "casual": "^1.6.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "graphql": "^14.4.2",
+    "graphql-import": "^0.7.1",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "nodemon": "^1.19.2"
+  }
+}

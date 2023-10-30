@@ -1,0 +1,10 @@
+type Sponsor {
+    type: SponsorType
+    trackingData: String
+}
+
+enum SponsorType {
+    NO_SPONSOR
+    COST_PER_TIME
+    COST_PER_CLICK
+}

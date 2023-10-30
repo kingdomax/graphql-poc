@@ -1,0 +1,60 @@
+type InformationSummary {
+    propertyType: PropertyType
+    accommodationType: AccommodationType
+    url: String
+    awardYear: Int
+    name: Name
+    address: Address
+    coordinate: Coordinate
+    spokenLanguage: [SpokenLanguage]
+    renovation: Renovation
+    hasHostExperience: Boolean
+}
+
+enum PropertyType { 
+    NORMAL_PROPERTY
+    NHA_PROPERTY
+    NHA_SINGLEROOM_PROPERTY
+}
+
+enum AccommodationType {
+    HOTEL
+    HOSTEL
+    BANGALORE
+    VILLA
+    ENTIRE_APARTMENT
+    ENTIRE_HOUSE
+}
+
+type Name {
+    default: String
+    locale: String
+}
+
+type Address {
+    cityId: Int
+    cityName: String
+    areaId: Int
+    areaName: String
+    countryId: Int
+    countryName: String
+}
+
+type Coordinate {
+    latitude: Float
+    longitude: Float
+}
+
+type SpokenLanguage {
+    id: Int
+}
+
+enum RenovationType { 
+    NEWLY_BUILT
+    NEWLY_RENOVATE
+}
+
+type Renovation {
+    type: RenovationType
+    year: Int
+}

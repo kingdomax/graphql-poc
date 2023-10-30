@@ -1,0 +1,14 @@
+# import Property from './property.graphql'
+# import Date from './type/customType.graphql'
+
+type Query {
+  mockServer1: MockResponse1
+}
+
+type MockResponse1 {
+  properties: [Property]
+  recommendedProperty: [Property]
+  # highlyRatedAgodaHome: [Property]
+  # featureAgodaHomesResult: [Property]
+  # extraAgodaHomes: [Property]
+}

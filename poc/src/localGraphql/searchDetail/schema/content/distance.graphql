@@ -1,0 +1,13 @@
+type Distance {
+    objectType: DistanceType
+    objectName: String
+    objectId: Int
+    distance: Int
+}
+
+enum DistanceType {
+    CITYCENTER
+    TRANSPORTATION
+    LANDMARK
+    BEACH
+}

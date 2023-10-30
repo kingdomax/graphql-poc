@@ -1,0 +1,8 @@
+# Dependency directories
+node_modules/
+
+# VS CODE
+.vscode/
+
+#LOG FILE
+*.log

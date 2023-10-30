@@ -1,0 +1,32 @@
+type UniqueSellingPoint {
+    type: USPType
+    rank: Int
+    value: Float
+    segment: USPSegment
+    propertyType: USPPropertyType
+}
+
+enum USPType {
+    SEGMENT_REVIEW
+    GUEST_RATE
+    NATIONALITY
+    ROOM_SIZE
+    FAMILY_RICH
+}
+
+enum USPSegment {
+    SOLO
+    COUPLE
+    BUSINESS_TRAVELER
+    FAMILY
+}
+
+enum USPPropertyType {   
+    FIVE_STAR_HOTEL
+    FOUR_STAR_HOTEL
+    THREE_STAR_HOTEL
+    SERVICED_APARTMENT
+    GUEST_HOUSE
+    RESORT
+    HOSTEL
+}

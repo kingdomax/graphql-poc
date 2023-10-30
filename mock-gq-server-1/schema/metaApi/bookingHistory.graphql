@@ -1,0 +1,5 @@
+type BookingHistory {
+    numberOfBooking: Int
+    "what should be the unit of timespan(hour, day, dateTime) ?"
+    timeSpan: Int
+}

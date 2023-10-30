@@ -1,0 +1,3 @@
+type AdvanceGuaranteeProgram {
+    isEligible: Boolean
+}

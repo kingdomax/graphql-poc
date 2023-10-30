@@ -1,0 +1,16 @@
+type MapInformation {
+    zoomLevel: Int
+    centerLatitude: Float
+    centerLongtitude: Float
+    landmarks: [Landmark]
+}
+
+type Landmark {
+    id: Int
+    type: Int
+    name: String
+    shortName: String
+    latitude: Float
+    longitude: Float
+    imageUrls: [String]
+}

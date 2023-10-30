@@ -1,0 +1,20 @@
+type Images {
+    propertyImages: [PropertyImage]
+}
+
+type PropertyImage {
+    id: Int
+    url: String
+    caption: String
+    imageType: Int
+    categoryId: ImageCategory
+}
+
+enum ImageCategory {
+    ALL
+    ROOMS
+    FACILITY
+    PROPERTY_VIEW
+    DINING
+    OTHER
+}

@@ -1,0 +1,5 @@
+type AlternateDate {
+    checkIn: Date
+    los: Int
+    price: Float
+}

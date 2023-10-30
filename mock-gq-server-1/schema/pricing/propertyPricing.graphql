@@ -1,0 +1,17 @@
+# import Payment from './payment.graphql'
+# import Benefit from './benefit.graphql'
+# import Pointmax from './pointmax.graphql'
+# import CheapestRoomOffer from './cheapestRoomOffer.graphql'
+# import AdvanceGuaranteeProgram from './advanceGuaranteeProgram.graphql'
+
+type PropertyPricing {
+    isReady: Boolean
+    isAvailable: Boolean
+    advanceGuaranteeProgram: AdvanceGuaranteeProgram
+    "Can client translate this text by themselve?"
+    pricingMessage: String
+    pointmax: Pointmax
+    payment: Payment
+    benefits: [Benefit]
+    cheapestRoomOffer: CheapestRoomOffer
+}

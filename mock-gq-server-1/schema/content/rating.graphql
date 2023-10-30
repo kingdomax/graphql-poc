@@ -1,0 +1,9 @@
+type Rating {
+    value: Float
+    type: RatingType
+}
+
+enum RatingType {
+  NORMAL_PROPERTY
+  NHA_PROPERTY
+}

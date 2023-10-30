@@ -1,0 +1,6 @@
+type SupplierInformation {
+    id: Int
+    name: String
+    imageUrls: [String]
+    isAgodaBand: Boolean
+}

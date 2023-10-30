@@ -1,0 +1,7 @@
+# import PriceDrop from './priceDrop.graphql'
+# import BookingHistory from './bookingHistory.graphql'
+
+type PropertyMeta {
+    priceDrop: PriceDrop
+    bookingHistory: BookingHistory
+}

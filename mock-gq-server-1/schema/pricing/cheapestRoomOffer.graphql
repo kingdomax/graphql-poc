@@ -1,0 +1,21 @@
+# import Benefit from './benefit.graphql'
+# import Payment from './payment.graphql'
+# import Discount from './discount.graphql'
+# import PriceInfo from './priceInfo.graphql'
+# import MseRoomSummary from './mseRoomSummary.graphql'
+
+type CheapestRoomOffer {
+    uid: String
+    supplierId: Int
+    payment: Payment
+    benefits: [Benefit]
+    availableRooms: Int
+    occupancy: Int
+    saveUpTo: Float
+    agodaCash: Float
+    isMseProperty: Boolean
+    isPromoEligible: Boolean
+    price: PriceInfo
+    discount: Discount
+    mseRoomSumaries: [MseRoomSummary]
+}

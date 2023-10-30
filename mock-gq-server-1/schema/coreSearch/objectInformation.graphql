@@ -1,0 +1,14 @@
+type ObjectInformation {
+    "Object ID for you search destination"
+    id: Int
+    "Object name for you search destination"
+    name: String
+    "City ID of your search destination"
+    cityId: Int
+    "City name of your search destination"
+    cityName: String
+    "Country ID of your search destination"
+    countryId: Int
+    "Country name of your search destination"
+    countryName: String
+}
